@@ -1,0 +1,137 @@
+.body{
+    background-color: white;
+    color: rgb(15, 20, 25);
+}
+
+.navegação ul{
+    list-style: none;
+    padding: 1%;
+    margin: 0;
+}
+
+.navegação ul li{
+    margin-bottom: 10px;
+}
+.navegação a{
+    color: rgb(15, 20, 25);
+    text-decoration: none;
+}
+
+.navegação a:hover{
+    background-color: rgba(15, 25, 20, 0.1);
+    border-radius: 8px;
+}
+
+
+.publicações a{
+    color: rgb(15, 20, 25);
+    text-decoration: none;
+}
+
+.publicações a:hover{
+    background-color: rgba(15, 25, 20, 0.1) ;
+    border-radius: 8px;
+}
+
+.profile h4,
+.profile p{
+    color: rgb(15, 20, 25);
+}
+
+.profile h5{
+    color: rgb(83, 100, 113);
+}
+.profile button {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    font-size: 10px;
+    border: 1px solid rgb(83, 100, 113);
+    border-radius: 5px;
+    background-color: white;
+    color: rgb(15, 20, 25);
+    cursor: pointer;
+}
+.infos li{
+    list-style: none;
+    display: inline-block;
+    color: rgb(83, 100, 113);
+}
+img{
+    height: 64px;
+    width: 64px;
+    border-radius: 100px;
+}
+.estatistica ul{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+.estatistica ul li > a{
+    color: rgb(83, 100, 113);
+    font-weight: bold;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.estatistica ul li a span{
+    color: rgb(15, 20, 25);
+    font-weight: bold;
+}
+.estatistica ul li > a:hover{
+    text-decoration: underline;
+}
+
+.publicações a{
+    color: rgb(83, 100, 113);
+}
+.ações a{
+    text-decoration: none;
+    color: rgb(83, 100, 113);
+    background-color: transparent;
+    border-radius: 8px;
+}
+
+.ações:hover{
+    text-decoration: none;
+}
+
+.ações a.reply:hover,
+.ações a.share:hover{
+    background-color: rgba(29, 155, 240, 0.1);
+    color: rgba(29, 155, 240, 1);
+}
+
+.ações a.retzeet:hover{
+    background-color: rgba(0, 186, 124, 0.1);
+    color: rgba(0, 186, 124, 1);
+}
+
+.ações a.like:hover{
+    background-color: rgba(249, 24, 128, 0.1);
+    color: rgba(249, 24, 128, 1);
+}
+
+.user{
+    color: rgb(15, 20, 25);
+}
+.user time{
+        color: rgb(83, 100, 113);
+}
+.user span.arroba{
+    color: rgb(83, 100, 113);
+}
+article p{
+    color: rgb(15, 20, 25);
+}
+
+
+article{
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+article:hover{
+    background-color: rgba(0, 0, 0, 0.03);;
+}
