@@ -17,19 +17,13 @@
     text-decoration: none;
 }
 
+.navegação a:focus,
+.ações a:focus {
+    outline: 2px solid rgb(29, 155, 240);
+}
+
 .navegação a:hover{
     background-color: rgba(15, 25, 20, 0.1);
-    border-radius: 8px;
-}
-
-
-.publicações a{
-    color: rgb(15, 20, 25);
-    text-decoration: none;
-}
-
-.publicações a:hover{
-    background-color: rgba(15, 25, 20, 0.1) ;
     border-radius: 8px;
 }
 
@@ -44,7 +38,7 @@
 .profile button {
     margin-bottom: 10px;
     padding: 5px 10px;
-    font-size: 10px;
+    font-size: 12px;
     border: 1px solid rgb(83, 100, 113);
     border-radius: 5px;
     background-color: white;
@@ -83,7 +77,15 @@ img{
 
 .publicações a{
     color: rgb(83, 100, 113);
+    text-decoration: none;
+    
 }
+
+.publicações a:hover{
+    background-color: rgba(15, 25, 20, 0.1) ;
+    border-radius: 8px;
+}
+
 .ações a{
     text-decoration: none;
     color: rgb(83, 100, 113);
@@ -110,9 +112,9 @@ img{
     background-color: rgba(249, 24, 128, 0.1);
     color: rgba(249, 24, 128, 1);
 }
-
 .user{
     color: rgb(15, 20, 25);
+    margin-bottom: 10px;
 }
 .user time{
         color: rgb(83, 100, 113);
@@ -120,18 +122,15 @@ img{
 .user span.arroba{
     color: rgb(83, 100, 113);
 }
+
 article p{
     color: rgb(15, 20, 25);
 }
 
-
-article{
+article.tzeet {
     background-color: transparent;
-    border-radius: 8px;
-    padding: 10px;
     transition: background-color 0.3s ease;
 }
-
-article:hover{
-    background-color: rgba(0, 0, 0, 0.03);;
+article.tzeet:hover {
+    background-color: rgba(0, 0, 0, 0.03);
 }
