@@ -17,8 +17,7 @@
     text-decoration: none;
 }
 
-.navegação a:focus,
-.ações a:focus {
+.navegação a:focus {
     outline: 2px solid rgb(29, 155, 240);
 }
 
@@ -50,11 +49,16 @@
     display: inline-block;
     color: rgb(83, 100, 113);
 }
-img{
+.profile img{
     height: 64px;
     width: 64px;
     border-radius: 100px;
 }
+
+p{
+    color: rgb(15, 20, 25);
+}
+
 .estatistica ul{
     display: flex;
     list-style: none;
@@ -86,6 +90,18 @@ img{
     border-radius: 8px;
 }
 
+.tzeet div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tzeet div img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
 .ações a{
     text-decoration: none;
     color: rgb(83, 100, 113);
@@ -115,6 +131,7 @@ img{
 .user{
     color: rgb(15, 20, 25);
     margin-bottom: 10px;
+    margin: 0;
 }
 .user time{
         color: rgb(83, 100, 113);
@@ -123,9 +140,6 @@ img{
     color: rgb(83, 100, 113);
 }
 
-article p{
-    color: rgb(15, 20, 25);
-}
 
 article.tzeet {
     background-color: transparent;
