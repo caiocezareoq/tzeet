@@ -3,25 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>perfil no tzeeter</title>
 </head>
 <body>
-    <header>
-        <nav class="navegação">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Explore</a></li>
-                <li><a href="#">Notifications</a></li>
-                <li><a href="#">Messages</a></li>
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">More</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navegação">
+        <ul>
+            <li class="logo"><i class="bi bi-twitter"></i></li>
+            <li><a href="#"><i class="bi bi-house"></i><span>Home</span></a></li>
+            <li><a href="#"><i class="bi bi-hash"></i> <span>Explore</span></a></li>
+            <li><a href="#"><i class="bi bi-bell"></i> <span>Notifications</span></a></li>
+            <li><a href="#"><i class="bi bi-envelope"></i> <span>Messages</span></a></li>
+            <li><a href="#"><i class="bi bi-person"></i><span>Profile</span></a></li>
+            <li><a href="#"><i class="bi bi-three-dots"></i> <span>More</span></a></li>
+            <button>Tzeetar</button>
+        </ul>
+    </nav>
 
-    <main>
-        <article class="profile">
+    <main class="profileContainer">
+        <section class="profile">
             <img src="https://voxnews.com.br/wp-content/uploads/2017/04/unnamed.png" 
             alt="perfil sem foto">
             <button>Edit profile</button>
@@ -31,22 +32,20 @@
                 Aluno de Redes de Computadores da UFC
             </p>
             <ul class="infos">
-                <li>Quixada</li>
-                <li>Joined May 2015</li>
+                <li><i class="bi bi-geo-alt"></i> Quixada</li>
+                <li><i class="bi bi-calendar3"></i> Joined May 2015</li>
             </ul>
-            <nav class="estatistica">
-                <ul>
-                    <li><a href="#"><span>517</span> following</a></li>
-                    <li><a href="#"><span>287</span> followers</a></li>
+                <ul class="estatistica">
+                    <li><a href="#"><span class="numSeg">517</span> following</a></li>
+                    <li><a href="#"><span class="numSeg">287</span> followers</a></li>
                 </ul>
-            </nav>
-        </article>
-        
+        </section>
+
         <nav class="publicações">
-                <a href="#">Tzeets</a>
-                <a href="#">Tzeets & replies</a>
-                <a href="#">Media</a>
-                <a href="#">Links</a>
+            <a href="#">Tzeets</a>
+            <a href="#">Tzeets & replies</a>
+            <a href="#">Media</a>
+            <a href="#">Links</a>
         </nav>
         <article class="tzeet">
             <div>
@@ -55,10 +54,10 @@
             </div>
                 <p>I love you so much!!</p>
             <nav class="ações">
-                <a href="#" class="reply">Reply</a>
-                <a href="#" class="retzeet">Retzeet</a>
-                <a href="#" class="like">Like</a>
-                <a href="#" class="share">Share</a>
+                <a href="#" class="reply"><i class="bi bi-chat"></i> 100</a>
+                <a href="#" class="retzeet"><i class="bi bi-arrow-repeat"></i> 200</a>
+                <a href="#" class="like"><i class="bi bi-heart"></i> 300</a>
+                <a href="#" class="share"><i class="bi bi-arrow-bar-up"></i></a>
             </nav>
         </article>
         <article class="tzeet">
@@ -69,13 +68,43 @@
                 <p>aurorinha vai runfar</p>
             
             <nav class="ações">
-                <a href="#" class="reply">Reply</a>
-                <a href="#" class="retzeet">Retzeet</a>
-                <a href="#" class="like">Like</a>
-                <a href="#" class="share">Share</a>
+                <a href="#" class="reply"><i class="bi bi-chat"></i> 100</a>
+                <a href="#" class="retzeet"><i class="bi bi-arrow-repeat"></i> 200</a>
+                <a href="#" class="like"><i class="bi bi-heart"></i> 300</a>
+                <a href="#" class="share"><i class="bi bi-arrow-bar-up"></i></a>
             </nav>
         </article>
+        
     </main>
+    <aside class="sugestoesContainer">
+        <div class="buscar">
+            <i class="bi bi-search"></i></span>
+            <input type="text" class="search-control" placeholder="Username">
+        </div>
+        <div class="sugestoes">
+            <h5> Talvez você curta</h5>
+            <ul class="perfisrecomendados">
+                <li class="perfilsugerido">
+                    <img src="https://pbs.twimg.com/profile_images/1798416369018458112/l5xROgM7_400x400.jpg" alt="foto de perfil de Wendel">
+                    <a href="#" class="nome">Wendel</a>
+                    <button>Seguir</button>
+                </li>
+                <li class="perfilsugerido">
+                    <img src="https://pbs.twimg.com/profile_images/1877679835323023360/VG02fdPP_400x400.jpg" alt="foto de perfil do yago">
+                    <a href="#" class="nome">Yago</a>
+                    <button>Seguir</button>
+                </li>
+                <li class="perfilsugerido">
+                    <img src="https://pbs.twimg.com/profile_images/1865200022511386624/Ai3oNspr_400x400.jpg" alt="foto de perfil de manu">
+                    <a href="#" class="nome">Manu</a>
+                    <button>Seguir</button>
+                </li>
+            </ul>
+                <a href="#" class="mostrarMais">Mostrar mais</a>
+        </div>
+
+    </aside>
 
 </body>
-</html>
+    
+   
