@@ -44,12 +44,9 @@ body{
     background-color: #187bcd;
 }
 
-.tzeetMobile{
-    display: none;
-}
 
 .profileContainer{
-   flex: 2;
+   flex: 7;
    padding: 10px;
 }
 .profile img{
@@ -212,6 +209,12 @@ article.tzeet{
 }
 article.tzeet:last-child {
     border-bottom: none; 
+}
+
+.sugestoesContainer{
+    padding: 20px;
+    flex: 2;
+    border-left: 1px solid rgb(230, 236, 240);
 }
 
 .sugestoes{
