@@ -31,7 +31,7 @@ body{
     border-radius: 8px;
 }
 
-.navegação button {
+.tzeetar {
     padding: 10px 40px;
     border: none;
     border-radius: 50px;
@@ -40,8 +40,12 @@ body{
     cursor: pointer;
 }
 
-.navegação button:hover {
+.tzeetar button:hover {
     background-color: #187bcd;
+}
+
+.tzeetMobile{
+    display: none;
 }
 
 
@@ -207,6 +211,7 @@ article.tzeet{
     border-bottom: 1px solid rgb(230, 236, 240);
     padding: 10px;
 }
+border-radius: 20px;
 article.tzeet:last-child {
     border-bottom: none; 
 }
@@ -231,7 +236,6 @@ article.tzeet:last-child {
 
 .buscar{
     padding: 10px;
-    border-radius: 20px;
     margin-bottom: 10px;
     background-color: rgb(241, 238, 238);
 
@@ -310,13 +314,18 @@ article.tzeet:last-child {
         display: none;
     }
 
-    .navegação button {
-        padding: 10px 25px;
-        border: none;
-        border-radius: 50px;
+    .tzeetMobile  {
+        display: block;
+        padding: 10px 20px;
+        border-style: none;
+        border-radius: 20px;
         background-color: #1d9bf0;
         color: white;
-        cursor: pointer;
+
+    }
+
+    .tzeetar{
+        display: none;
     }
 
    
