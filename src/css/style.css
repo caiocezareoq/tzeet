@@ -4,19 +4,26 @@ body{
 }
 
 .navegação{
-    padding-right: 10px;
-    list-style: none;
+    padding-right: 60px;
+    border-right: 2px solid rgb(230, 236, 240);
 }
 
-.navegação ul li{
-    margin-bottom: 10px;
+.navegação li{
+    margin-bottom: 20px;
     list-style: none;
     display: flex;
+
 }
 .navegação a{
     color: rgb(15, 20, 25);
     text-decoration: none;
     padding: 5px;
+}
+
+.navegação img{
+    margin-top: 20px;
+    margin-left: 40px;
+    max-width: 25px;
 }
 
 .navegação li:hover{
@@ -25,25 +32,25 @@ body{
 }
 
 .navegação button {
-    margin-top: 20px;   
-    padding: 10px 20px;
+    padding: 10px 40px;
     border: none;
-    border-radius: 20px;
+    border-radius: 50px;
     background-color: #1d9bf0;
     color: white;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    display: flex;
 }
 
 .navegação button:hover {
     background-color: #187bcd;
 }
 
+.tzeetMobile{
+    display: none;
+}
+
 .profileContainer{
    flex: 2;
-   padding: 20px;
-   margin-top: 20px;
+   padding: 10px;
 }
 .profile img{
     max-height: 100px;
@@ -61,7 +68,7 @@ body{
 }
 
 .profile button {
-    margin-top: 100px;
+    margin-top: auto;
     float: right;
     padding: 10px;
     border: none;
@@ -69,6 +76,7 @@ body{
     background-color: #1d9bf0;
     color: white;
     cursor: pointer;
+    margin: 60px;
 }
 
 .infos{
@@ -113,16 +121,16 @@ span.numSeg{
 }
 
 .publicações > a{
-    width: 100%;
+    min-width: 25%;
     text-align: center;
     color: rgb(83, 100, 113);
     text-decoration: none;
-    padding: 10px;
     border-right: 2px solid  rgb(189, 199, 206);
 }
 
 .publicações a:hover{
     background-color: rgba(15, 25, 20, 0.1) ;
+    width: 20px;
 }
 
 .publicações > a:last-child {
@@ -198,6 +206,10 @@ article.tzeet p{
     
 }
 
+article.tzeet{
+    border-bottom: 1px solid rgb(230, 236, 240);
+    padding: 10px;
+}
 article.tzeet:last-child {
     border-bottom: none; 
 }
@@ -223,6 +235,10 @@ article.tzeet:last-child {
 }
 .perfisrecomendados .nome{
     text-decoration: none;
+}
+
+.perfisrecomendados .nome:hover{
+    text-decoration: underline;
 }
 
 .buscar input {
@@ -279,25 +295,29 @@ article.tzeet:last-child {
     padding-left: 10px ;
 }
 
-.mostrarMais:hover {
-    
-}
 
 @media (max-width: 768px) {
 
 
     .navegação {
         max-width: 10%;
-        margin-right: 30px;
     }
-
 
     .navegação a span {
         display: none;
     }
-    
-    .navegação a i {
-        margin-right: 0;
-        font-size: 20px;
+
+    .navegação button {
+        padding: 10px 25px;
+        border: none;
+        border-radius: 50px;
+        background-color: #1d9bf0;
+        color: white;
+        cursor: pointer;
+    }
+
+   
+    .sugestoesContainer{
+        display: none;
     }
 }
