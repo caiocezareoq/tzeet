@@ -1,53 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/src/css/style.css">
-    <title>Perfil - Tzeeter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/home/style.css">
+    <link rel="stylesheet" href="/src/modal/style.css">
+
+    <title>Home - Tzeeter</title>
 </head>
 
 <body>
     <nav class="navegação">
         <img src="/src/images/tiziu.png" alt="logo">
         <ul>
-            <li><a href="index.html"><i class="bi bi-house"></i><span> Home</span></a></li>
+            <li><a href="/home/index.html"><i class="bi bi-house"></i><span> Home</span></a></li>
             <li><a href="#"><i class="bi bi-hash"></i><span> Explore</span></a></li>
             <li><a href="#"><i class="bi bi-bell"></i><span> Notifications</span></a></li>
             <li><a href="#"><i class="bi bi-envelope"></i><span> Messages</span></a></li>
-            <li><a href="profile.html"><i class="bi bi-person"></i><span> Profile</span></a></li>
+            <li><a href="/profile/profile.html"><i class="bi bi-person"></i><span> Profile</span></a></li>
             <li><a href="#"><i class="bi bi-three-dots"></i><span> More</span></a></li>
-            <li><button class="tzeetar">Tzeet</button></li>
-            <li><button class="tzeetMobile"> <i class="bi bi-chat"></i></button></li>
-        </ul>
-            
+            <li><button class="tzeetar" id="modalTzeetar">Tzeet</button></li>
+            <li><button class="tzeetarMobile" id="modalTzeetarMobile"><i class="bi bi-chat"></i></button></li>
+        </ul>   
     </nav>
 
-    <main class="profileContainer">
-        <section class="profile">
-            <img src="https://pbs.twimg.com/profile_images/1396887377608593411/8jy-FPk__400x400.jpg" alt="Perfil sem foto">
-            <button>Edit profile</button>
-            <h4>Caio Cezar</h4>
-            <h5>@caiiocezar</h5>
-            <p>Aluno de Redes de Computadores da UFC</p>
-            <ul class="infos">
-                <li><i class="bi bi-geo-alt"></i> Quixada</li>
-                <li><i class="bi bi-calendar3"></i> Joined May 2015</li>
-            </ul>
-            <ul class="estatistica">
-                <li><a href="#"><span class="numSeg">517</span> following</a></li>
-                <li><a href="#"><span class="numSeg">287</span> followers</a></li>
-            </ul>
+    <main class="homePage">
+        <section class="home">
+            <h2>Home</h2>
+            <form class="tzeetForm">
+                <img src="https://pbs.twimg.com/profile_images/1396887377608593411/8jy-FPk__400x400.jpg" alt="Foto de Perfil">
+                <textarea placeholder="O que você está pensando?" id="textarea"></textarea>
+            </form>
+            
+            <div class="replyConfig">
+                <a href="#"><i class="bi bi-globe-americas"></i> Everyone can reply</a>
+            </div>
+
+            <div class="footerTzeet">
+                <section class="multimedia">
+                    <a href="#"><i class="bi bi-image"></i></a>
+                    <a href="#"><i class="bi bi-filetype-gif"></i></a>
+                    <a href="#"><i class="bi bi-emoji-smile"></i></a>
+                    <a href="#"><i class="bi bi-bar-chart"></i></a>
+                    <a href="#"><i class="bi bi-calendar-event"></i></a>
+                    <a href="#"><i class="bi bi-geo-alt"></i></a>
+                </section>
+
+                <section class="statusEnvio">
+                    <span class="contador"></span>
+
+                    <span class="separador">|</span>
+
+                    <div class="adicionarTzeet">
+                        <i class="bi bi-plus-circle"></i>
+                    </div>
+                     
+
+                    <button class="enviarTzeet" disabled>Enviar</button>
+                </section>
+            </div>
         </section>
 
-        <nav class="publicações">
-            <a href="#">Tzeets</a>
-            <a href="#">Tzeets & replies</a>
-            <a href="#">Media</a>
-            <a href="#">Links</a>
-        </nav>
+        <dialog id="modalTzeet"></dialog>
+        <dialog id="modalTzeetMobile"></dialog>
 
         <article class="tzeet">
             <div>
@@ -62,7 +79,6 @@
                 <a href="#" class="share"><i class="bi bi-arrow-bar-up"></i></a>
             </nav>
         </article>
-
         <article class="tzeet">
             <div>
                 <img src="https://pbs.twimg.com/profile_images/1396887377608593411/8jy-FPk__400x400.jpg" alt="Foto de perfil do Twitter">
@@ -102,12 +118,12 @@
             <h5>Who to follow</h5>
             <ul class="perfisrecomendados">
                 <li class="perfilsugerido">
-                    <img src="https://pbs.twimg.com/profile_images/1798416369018458112/l5xROgM7_400x400.jpg" alt="Foto de perfil de Wendel">
+                    <img src="/src/images/Wendel.jpg" alt="Foto de perfil de Wendel">
                     <a href="#" class="nome">Wendel</a>
                     <button>Follow</button>
                 </li>
                 <li class="perfilsugerido">
-                    <img src="https://pbs.twimg.com/profile_images/1877679835323023360/VG02fdPP_400x400.jpg" alt="Foto de perfil do Yago">
+                    <img src="/src/images/Yago.jpg" alt="Foto de perfil do Yago">
                     <a href="#" class="nome">Yago</a>
                     <button>Follow</button>
                 </li>
@@ -120,6 +136,9 @@
             <a href="#" class="mostrarMais">Show more</a>
         </div>
     </aside>
-</body>
 
+    
+</body>
+    <script src="/home/script.js"></script>
+    <script src="/src/modal/script.js"></script>
 </html>

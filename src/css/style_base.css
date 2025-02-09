@@ -30,100 +30,7 @@ body{
     background-color: rgba(15, 25, 20, 0.1);
     border-radius: 8px;
 }
-.homePage{
-    flex: 6;
-}
-.home{
-    padding: 20px;
-}
 
-.tzeetForm{
-    display: flex;
-    border-radius: 10px;
-    gap: 10px;
-    background-color: #fff;
-}
-
-.tzeetForm img{
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    border: 2px solid #ccc;
-    padding: 2px;
-}
-
-textarea{
-    width: 100%;
-    min-height: 80px;
-    border: none;
-    font-size: 15px;
-    padding: 10px;
-    outline: none;
-    resize: none;
-}
-
-textarea::placeholder {
-    color: #828181;
-
-}
-.replyConfig{
-    display: flex;
-    align-items: center;
-    padding: 5px 0;
-}
-
-.replyConfig a {
-    text-decoration: none;
-    font-size: 14px;
-    color: #1d9bf0;
-
-}
-
-.replyConfig:hover{
-    background-color: rgba(29, 155, 240, 0.1);
-    width: 130px;
-    border-radius: 60px;
-}
-
-.footerTzeet{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 10px;
-}
-
-.multimedia{
-    display: flex;
-    gap: 10px;
-    padding: 10px 0;
-}
-
-.multimedia i{
-    font-size: 15px;
-    color: #828181;
-}
-
-.multimedia i:hover{
-    background-color: rgba(29, 155, 240, 0.1);
-}
-
-.statusEnvio{
-   display: flex;
-   align-items: center;
-   gap: 10px;
-}
-
-.statusEnvio button{
-    border-radius: 50px;
-    border: none;
-    width: 150%;
-    font-size: 15px;
-    padding: 15px;
-    background-color: #1d9bf0;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-}
 
 .tzeetar {
     padding: 10px 40px;
@@ -138,8 +45,9 @@ textarea::placeholder {
     background-color: #187bcd;
 }
 
-.tzeetMobile{
+.tzeetarMobile{
     display: none;
+    cursor: pointer;
 }
 
 
@@ -230,10 +138,6 @@ span.numSeg{
 
 .publicações > a:last-child {
     border-right: none; 
-}
-
-.tzeet{
-    
 }
 
 .tzeet div {
@@ -411,7 +315,7 @@ article.tzeet:last-child {
         display: none;
     }
 
-    .tzeetMobile  {
+    .tzeetarMobile  {
         display: block;
         padding: 10px 20px;
         border-style: none;

@@ -1,0 +1,370 @@
+body{
+    color: rgb(15, 20, 25);
+    display: flex;
+}
+
+.navegação{
+    padding-right: 60px;
+    border-right: 2px solid rgb(230, 236, 240);
+}
+
+.navegação li{
+    margin-bottom: 20px;
+    list-style: none;
+    display: flex;
+
+}
+.navegação a{
+    color: rgb(15, 20, 25);
+    text-decoration: none;
+    padding: 5px;
+}
+
+.navegação img{
+    margin-top: 20px;
+    margin-left: 40px;
+    max-width: 25px;
+}
+
+.navegação li:hover{
+    background-color: rgba(15, 25, 20, 0.1);
+    border-radius: 8px;
+}
+.homePage{
+    flex: 6;
+}
+.home{
+    padding: 20px;
+}
+
+.tzeetForm{
+    display: flex;
+    border-radius: 10px;
+    gap: 10px;
+    background-color: #fff;
+}
+
+.tzeetForm img{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    padding: 2px;
+}
+
+textarea{
+    width: 100%;
+    min-height: 80px;
+    border: none;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    resize: none;
+}
+
+textarea::placeholder {
+    color: #828181;
+
+}
+.replyConfig{
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.replyConfig a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #1d9bf0;
+
+}
+
+.replyConfig:hover{
+    background-color: rgba(29, 155, 240, 0.1);
+    width: 130px;
+    border-radius: 60px;
+}
+
+.footerTzeet{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.multimedia{
+    display: flex;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.multimedia i{
+    font-size: 15px;
+    color: #828181;
+}
+
+.multimedia i:hover{
+    background-color: rgba(29, 155, 240, 0.1);
+    border-radius: 40px;
+}
+
+.statusEnvio{
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+.contador{
+    font-size: 14px;
+    font-weight: bold;
+    display: none;
+}
+
+.adicionarTzeet {
+    width: 32px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.adicionarTzeet:hover {
+    background-color: rgba(29, 155, 240, 0.2);
+    border-radius: 50px;
+}
+
+.separador{
+    display: none;
+    font-weight: bold;
+    color: rgb(200, 200, 200);
+}
+
+.enviarTzeet{
+    border-radius: 50px;
+    border: none;
+    width: 150%;
+    font-size: 15px;
+    padding: 15px;
+    background-color: #1d9bf0;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.enviarTzeet:disabled{
+    background-color: rgba(29, 155, 240, 0.5);
+    cursor: not-allowed;
+}
+
+.tzeetar {
+    padding: 10px 40px;
+    border: none;
+    border-radius: 50px;
+    background-color: #1d9bf0;
+    color: white;
+    cursor: pointer;
+}
+
+.tzeetar button:hover {
+    background-color: #187bcd;
+}
+
+.tzeetarMobile{
+    display: none;
+    cursor: pointer;
+}
+
+.tzeet div {
+    display: flex;
+    align-items: center;
+}
+
+.tzeet div img {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    display: flex;
+}
+.ações{
+    display: flex;
+    justify-content: space-around;  
+    padding: 5px 10px;
+    border-radius: 10px;
+    gap: 5px;
+    max-height: 30px;
+    max-width: 100%;
+}
+
+.ações a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(44, 77, 102);
+    padding: 18px;
+}
+
+.ações a i{
+    padding: 5px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.ações a.reply:hover,
+.ações a.share:hover{
+    color: rgba(29, 155, 240, 1);
+}
+
+.ações a.retzeet:hover{
+    color: rgba(0, 186, 124, 1);
+}
+
+.ações a.like:hover{
+    color: rgba(249, 24, 128, 1);
+    
+}
+
+.user{
+    color: rgb(15, 20, 25);
+    margin-bottom: 10px;
+    margin: 10px;
+}
+
+.user time, span.arroba{
+    color: rgb(83, 100, 113);
+}
+
+
+article.tzeet:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+article.tzeet p{
+    padding-left: 20px;
+    
+}
+
+article.tzeet{
+    border-bottom: 1px solid rgb(230, 236, 240);
+    padding: 10px;
+}
+article.tzeet:last-child {
+    border-bottom: none; 
+}
+
+.sugestoesContainer{
+    padding: 20px;
+    flex: 2;
+    border-left: 1px solid rgb(230, 236, 240);
+}
+
+.sugestoes{
+    background-color:rgb(241, 238, 238);;
+    padding: 10px;
+}
+
+.sugestoes h5 {
+    margin: 0 0 10px 0;
+    color: rgb(15, 20, 25);
+    font-size: 15px;
+}
+
+
+.buscar{
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(241, 238, 238);
+
+}
+.perfisrecomendados .nome{
+    text-decoration: none;
+}
+
+.perfisrecomendados .nome:hover{
+    text-decoration: underline;
+}
+
+.buscar input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 8px;
+    font-size: 14px;
+    color: rgb(83, 100, 113);
+}
+
+.perfisrecomendados{
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+
+}
+.perfisrecomendados img{
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+}
+
+.sugestoes ul li{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+}
+.perfilsugerido {
+    margin-left: 10px;
+}
+
+.perfisrecomendados button {
+    border: none;
+    border-radius: 20px;
+    padding: 5px 15px;
+    background-color: #1d9bf0;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.perfisrecomendados button:hover {
+    background-color: #187bcd;
+}
+
+.mostrarMais{
+    list-style: none;
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    text-decoration: none;
+    padding-left: 10px ;
+}
+
+
+@media (max-width: 768px) {
+
+
+    .navegação {
+        max-width: 10%;
+    }
+
+    .navegação a span {
+        display: none;
+    }
+
+    .tzeetarMobile  {
+        display: block;
+        padding: 10px 20px;
+        border-style: none;
+        border-radius: 20px;
+        background-color: #1d9bf0;
+        color: white;
+        cursor: pointer;
+
+    }
+
+    .tzeetar{
+        display: none;
+    }
+
+   
+    .sugestoesContainer{
+        display: none;
+    }
+}

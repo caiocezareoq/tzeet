@@ -1,0 +1,149 @@
+dialog {
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.fechar-modal {
+    align-self: flex-start;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #828181;
+}
+
+.home{
+    padding: 20px;
+}
+
+.tzeetForm{
+    display: flex;
+    border-radius: 10px;
+    gap: 10px;
+    background-color: #fff;
+}
+
+.tzeetForm img{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    padding: 2px;
+}
+
+textarea{
+    width: 100%;
+    min-height: 80px;
+    border: none;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    resize: none;
+}
+
+textarea::placeholder {
+    color: #828181;
+
+}
+.replyConfig{
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.replyConfig a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #1d9bf0;
+
+}
+
+.replyConfig:hover{
+    background-color: rgba(29, 155, 240, 0.1);
+    width: 130px;
+    border-radius: 60px;
+}
+
+.footerTzeet{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.multimedia{
+    display: flex;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.multimedia i{
+    font-size: 15px;
+    color: #828181;
+}
+
+.multimedia i:hover{
+    background-color: rgba(29, 155, 240, 0.1);
+    border-radius: 40px;
+}
+
+.statusEnvio{
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+.contador{
+    font-size: 14px;
+    font-weight: bold;
+    display: none;
+}
+
+.adicionarTzeet {
+    width: 32px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.adicionarTzeet:hover {
+    background-color: rgba(29, 155, 240, 0.2);
+    border-radius: 50px;
+}
+
+.separador{
+    display: none;
+    font-weight: bold;
+    color: rgb(200, 200, 200);
+}
+
+.enviarTzeet{
+    border-radius: 50px;
+    border: none;
+    width: 150%;
+    font-size: 15px;
+    padding: 15px;
+    background-color: #1d9bf0;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.enviarTzeet:disabled{
+    background-color: rgba(29, 155, 240, 0.5);
+    cursor: not-allowed;
+}
