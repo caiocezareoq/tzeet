@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/signup/style.css">
+    <title>Tzeeter - Registrar</title>
+</head>
+<body>
+    <main>
+        <section class="signup">
+                <button class="closeButton">&times;</button>
+                <h2>Crie uma conta</h2>
+                <form class="signup-form">
+                        <input id="name" type="text" placeholder="Nome:" required>
+                        <input id="email" type="email" placeholder="Email:" required>
+                        <input id="password" type="password" placeholder="Senha:" required>
+                        <input id="confirmPassword" type="password" placeholder="Confirmação da senha:" required>
+                        <div class="dataNasc">
+                            <label>Data de nascimento</label>
+                            <p>Isso não será exibido publicamente. Confirme sua própria idade, mesmo se esta conta for de empresa, de um animal de estimação ou outros.</p>
+                            <select id="month" required>
+                                <option value="">Mês</option>
+                            </select>
+                            <select id="day" required>
+                                <option value="">Dia</option>
+                            </select>
+                            <select id="year" required>
+                                <option value="">Ano</option>
+                            </select>
+                        </div>
+                        <label>
+                            <input type="checkbox" id="emailCheckbox"> Receba e-mails sobre sua atividade no Tzeet e recomendações.
+                        <label>
+                            <p>Você concorda com os Termos,  a Política de Privacidade e com o Uso de Cookies? </p>
+                            <input type="radio" name="policy" value="yes" required> Sim
+                            <input type="radio" name="policy" value="no"> Não
+                        </label>
+                        <button type="submit" id="submitButton" disabled>Inscrever-se</button>
+                </form>
+        </section>
+    </main>
+</body>
+    <script src="/signup/script.js"></script>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/login/style.css">
+    <title>Tzeeter - Login</title>
+</head>
+<body>
+    <main>
+        <section class="entrar">
+            <div class="logo">
+                <img src="/src/images/tiziu.png" alt="logo">
+            </div>
+            <h1>Entre no <span>Tzeeter agora mesmo</span></h1>
+            <form class="container" id="form">
+                    <input id="email" type="email" placeholder="E-mail:">
+                    <div class="error-message" id="emailError">Informe um email válido.</div>
+                    <input id="password" type="password" placeholder="Senha:">
+                    <a href="#" title="Recupere sua senha caso tenha esquecido">Esqueceu a senha?</a>
+                    <button type="submit" id="submitButton" disabled>Entrar</button>
+            </form>
+            <p class="registrar">
+                Não tem uma conta?
+                <a href="/signup/signup.html" title="Crie sua conta no sistema"> Inscreva-se →</a>
+            </p>
+        </section>
+    </main>
+</body>
+    <script src="/login/script.js"></script>
+</html>
